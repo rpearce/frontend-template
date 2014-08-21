@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "normalize.css": "^3.0.1",
+    "react": "^0.11.1"
+  },
+  "devDependencies": {
+    "browserify": "^5.10.1",
+    "coffee-script": "^1.7.1",
+    "coffeeify": "^0.7.0",
+    "gulp": "^3.8.0",
+    "gulp-compass": "^1.1.9",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^0.3.0",
+    "vinyl-source-stream": "^0.1.1"
+  },
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  }
+}
