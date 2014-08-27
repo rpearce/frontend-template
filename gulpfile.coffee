@@ -9,16 +9,16 @@ source = require 'vinyl-source-stream'
 
 gulp.task 'compass', ->
   gulp.src('./src/sass/*.sass')
-    .pipe compass(config_file: './compass.rb', css: 'build', sass: 'src/sass')
+    .pipe compass(config_file: './compass.rb', css: 'public', sass: 'src/sass')
     .pipe minifyCSS()
-    .pipe gulp.dest('./build')
+    .pipe gulp.dest('./public')
 
 gulp.task 'scripts', ->
   bundleStream = browserify(entries: ['./src/coffee/app.coffee'], extensions: ['.coffee']).bundle()
   bundleStream
     .pipe source('app.js')
     .pipe streamify(uglify())
-    .pipe gulp.dest('build')
+    .pipe gulp.dest('./public')
 
 gulp.task 'watch', ['compass', 'scripts'], ->
   gulp.watch('src/sass/**/*.sass', ['compass'])
