@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: $base-fontFamily;
+  font-size: $fontSize--root;
+  line-height: $base-lineHeight;
+  color: $base-color;
+}
+body,
+input,
+button,
+.btn {
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+h1 {
+  font-size: $fontSize--h1;
+}
+h2 {
+  font-size: $fontSize--h2;
+}
+h3 {
+  font-size: $fontSize--h3;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 7%);
+    border-bottom: 1px solid darken($link-color, 7%);
+  }
+}
+img {
+  display: block;
+  border: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe {
+  border: 0;
+}
+hr {
+  height: 0;
+  border: 5px solid #F7F7F9;
+}

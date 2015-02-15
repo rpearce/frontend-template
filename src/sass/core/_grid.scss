@@ -1,0 +1,30 @@
+.row {
+  font-size: 0
+}
+.size1of1,
+.size3of4,
+.size1of2,
+.size1of3,
+.size1of4,
+.size1of8 {
+  display: inline-block;
+  font-size: 1rem;
+}
+.size1of1 {
+  width: 100%;
+}
+.size3of4 {
+  width: 75%;
+}
+.size1of2 {
+  width: 50%;
+}
+.size1of3 {
+  width: 33.33333333333333%;
+}
+.size1of4 {
+  width: 25%;
+}
+.size1of8 {
+  width: 12.5%;
+}

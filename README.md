@@ -1,9 +1,10 @@
 # Frontend Template
 
-My custom jam
+## Installation
+- Clone the repository
+- `$ npm install`
+- `$ bundle`
 
-- gulp
-- browserify
-- compass
-- coffeescript
-- react
+## Usage
+- `$ npm run watch:sass`
+- `$ npm run watch:coffee`
