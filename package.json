@@ -29,8 +29,8 @@
   },
   "scripts": {
     "build:sass": "mkdir -p build/ && sass src/sass/app.scss build/app.css --sourcemap=none --style=compressed",
-    "build:coffee:dev": "mkdir -p build/ && browserify -t coffeeify src/coffee/app.coffee > build/app.js",
-    "build:coffee:production": "mkdir -p build/ && browserify -t coffeeify src/coffee/app.coffee | uglifyjs -o build/app.min.js --screw-ie8",
+    "build:coffee:dev": "export ENV=development && mkdir -p build/ && browserify -t coffeeify --extension=\".coffee\" src/coffee/app.coffee > build/app.js",
+    "build:coffee:production": "export ENV=production && mkdir -p build/ && browserify -t coffeeify src/coffee/app.coffee | uglifyjs -o build/app.min.js --screw-ie8",
     "clean": "rm -rf build/",
     "test": "mocha --compilers coffee:coffee-script/register",
     "watch:coffee": "watch 'npm run build:coffee:dev' .",
