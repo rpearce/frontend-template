@@ -33,7 +33,7 @@
     "build:coffee:production": "export ENV=production && mkdir -p build/ && browserify -t coffeeify src/coffee/app.coffee | uglifyjs -o build/app.min.js --screw-ie8",
     "clean": "rm -rf build/",
     "test": "mocha --compilers coffee:coffee-script/register",
-    "watch:coffee": "watch 'npm run build:coffee:dev' .",
-    "watch:sass": "sass --watch src/sass:build --sourcemap=none --style=compressed"
+    "watch:coffee": "watch 'npm run build:coffee:dev' src/coffee",
+    "watch:sass": "watch 'npm run build:sass' src/sass"
   }
 }
