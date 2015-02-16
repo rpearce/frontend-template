@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/build/app.css" rel="stylesheet" media="all">
+    <link href="./build/app.css" rel="stylesheet" media="all">
   </head>
   <body>
 
@@ -13,7 +13,7 @@
       ;(function() {
         var loadApp = function() {
           var script = document.createElement('script');
-          script.src = '/build/app.js';
+          script.src = './build/app.js';
           document.body.appendChild(script);
         };
         window.addEventListener('load', loadApp, false);
