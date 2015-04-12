@@ -5,9 +5,13 @@
 *:after {
   box-sizing: inherit;
 }
+html,
+body {
+  height: 100%;
+  font-size: $fontSize--root;
+}
 body {
   font-family: $base-fontFamily;
-  font-size: $fontSize--root;
   line-height: $base-lineHeight;
   color: $base-color;
 }
